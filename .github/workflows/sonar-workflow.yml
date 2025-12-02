@@ -19,8 +19,8 @@ jobs:
     - name: Build & Scan with SonarCloud
       run: |
         mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-          -Dsonar.projectKey=trainingss_testtrainings \
-          -Dsonar.organization=testtrainings \
+          -Dsonar.projectKey=trainingss_testtrainingss \
+          -Dsonar.organization=testtrainingss \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.token=${SONAR_TOKEN}
       env:
